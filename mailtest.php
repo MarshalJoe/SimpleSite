@@ -1,12 +1,10 @@
 <?php 
 
-if(mail("joseph.charles.marshall@gmail.com", 'test message', "test body") {
-	echo 'Your email was sent successfully.';
+if(@mail("joseph.charles.marshall@gmail.com", 'test message', "test body") {
+	echo '<h1>Your email was sent successfully</h1>';
 } else {
-	echo 'There was a problem sending your email.';
+	echo '<h1>There was a problem sending your email.</h1>';
 }
-
-
 
 
 ?>
