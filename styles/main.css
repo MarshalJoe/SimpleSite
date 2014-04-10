@@ -1,0 +1,396 @@
+/* margin strip + housekeeping */
+body, div, h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+}
+
+body, html {
+	width: 100%;
+}
+
+.clear {
+	clear:both;
+}
+
+a {
+	color:white;
+	text-decoration: none;
+	font-family: "Raleway";
+}
+
+ul, p {
+	font-family: "Raleway";
+}
+
+.mobile-only {
+	display: none;
+
+}
+
+/*header stuff*/
+
+
+.header {
+	width: 100%;
+	height: 70px;
+	background-color: #FF1A39;
+	position:fixed;
+	z-index: 100;
+}
+
+.name {
+	line-height: 70px;
+	font-size: 2em;
+	display: inline-block;
+	margin-left: 25px;
+	font-family: "Raleway";
+}
+
+.header-links {
+	list-style-type: none;
+	margin:0px;
+	line-height: 70px;
+	float:right;
+	width: 400px;
+	margin-right: 5px;
+}
+
+.links {
+	font-family: "Raleway";
+	display:inline-block;
+	line-height: 70px;
+	font-size: .75em;
+	margin-left: 7%;
+}
+
+/*main body*/
+
+.splash {
+	background-color: #FF1A39;
+	position: relative;
+	height: 100%;
+}
+
+.greeting {
+	padding-top: 80px;
+	font-size: 5em;
+	text-align: center;
+	line-height: .5em;
+	color:white;
+	font-family: "Raleway";
+	padding-bottom: 10px;
+}
+
+.hi {
+	font-size: 1.4em;
+}
+
+.available {
+	font-family: "Nothing You Could Do";
+	font-size: 1.1em;
+}
+
+.story {
+	height: 350px;
+	background-color: white;
+	line-height: 1.5em;
+}
+
+.story a {
+	color: #FF1A39;
+}
+
+.story a:hover {
+	color:#B20018;
+}
+
+.story p {
+	margin-top: 30px;
+}
+
+.code-pic {
+	width:100%;
+	height:500px;
+}
+
+.pencil-pic {
+	width:100%;
+	height: 325px;
+}
+
+.text {
+	margin-top: 90px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.text h1 {
+	color: #FF1A39;
+	font-size: 3em;
+}
+
+.skills {
+	width: 100%;
+}
+
+.skills .technical, .skills .writing, .skills .other  {
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	min-height:300px;
+	max-width: 250px;
+	color:white;
+}
+
+.code-container {
+	background-color: black;
+}
+
+.project {
+	border: 1px solid white;
+	background-color: black;
+	height:300px;
+}
+
+.project-info {
+	display:none;
+	color:white;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 1.25em;
+}
+
+.project-info p {
+	margin-left: 15px;
+	margin-right: 15px;
+	line-height: 1.25em;
+	font-size: .9em;
+}
+
+.project-info a {
+	color:white;
+	font-family: "La Belle Aurore";
+	font-size: 1.5em;
+	transition: color 1s;
+}
+
+.project-info a:hover {
+	color: #B20018;
+}
+
+.resume {
+	width:100%;
+	background-color: black;
+	color:white;
+	min-height:1000px;
+	max-height: 4000px;
+	padding: 50px;
+	border-top: 2px solid #FF1A39;
+}
+
+.resume .subtitle {
+	font-size: 2.25em;
+}
+
+.resume p, ul {
+	line-height: 1.3em;
+	font-size: 1.1em;
+}
+
+.resume h2 {
+	color:#FF1A39;
+	font-family: "Raleway";
+}
+
+.resume h3 {
+	margin-top: 10px;
+	line-height: 1.5em;
+	margin-bottom: 30px;
+	font-family: "Raleway";
+}
+
+
+.contact-section {
+	width: 100%;
+	background-color:black;
+}
+
+#contact-form h1 {
+	color: #FF1A39;
+	font-size: 2.5em;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	padding-left: 10%; 
+}
+
+#contact-form {
+	font-family: "Raleway";
+}
+
+#contact-form h2 {
+	color:white;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+#contact-form label {
+	color:white;
+	font-family: "Raleway";
+	font-size: 1.4em;
+}
+
+#contact-form .error {
+	color:red;
+}
+
+#contact-form textarea {
+	height: 150px;
+}
+
+#contact-form .container {
+    width: 60%;
+    margin-left: 150px;
+}
+
+.button {
+	margin-bottom: 35px;
+	font-family: "Raleway";
+	background-color: #FF1A39;
+}
+
+.button:hover {
+	background-color: #B20018;
+}
+
+#loading {
+	color:white;
+	font-size: 1.1em;
+	font-family: "Raleway";
+	padding-bottom: 50px;
+}
+
+#success {
+	font-family: "Raleway";
+	font-size: 1.1em;
+	color:white;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-bottom: 50px;
+
+}
+
+/*footer stuff*/
+
+.footer {
+	border-top: 15px solid #FF1A39;
+	width: 100%;
+	background-color:black;
+	height: 50px;
+	position: relative;
+	color:white;
+}
+
+.footer-text {
+	line-height: 1.25em;
+	position:absolute;
+	left:15px;
+	bottom:5px;
+}
+
+
+/*mobile-specific stylings*/
+@media (max-width: 800px) {
+	.header-links {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.text-box {
+		text-align: left;
+	}
+
+	.mobile-only {
+		display:block;
+	}
+
+	.name, .header, .header-links {
+		display: none;
+	}
+
+	.links {
+		margin: 8px;
+	}
+
+	.text {
+		margin-top: 65px;
+	}
+
+	.greeting {
+		font-size: 2.75em;
+		width:300px;
+		line-height: .8em;
+		padding-top: 20px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.greeting p {
+		padding-top: 0px;
+	}
+
+	.greeting a {
+		font-size: .5em;
+	}
+
+	.story {
+		margin-right: 25px;
+		margin-left: 25px;
+	}
+
+	.story p {
+		margin-top: 10px;
+		line-height: 1.25em;
+	}
+
+	.resume {
+		padding: 30px;
+		margin-right: auto;
+		margin-left: auto;
+		font-size: .8em;
+	}
+
+	.contact h2 {
+		font-size: 1em;
+	}
+
+	.signoff {
+		color: #B20018;
+		font-size: .5em;
+	}
+
+	#contact-form .container {
+    width: 100%;
+    margin: 0px;
+	}
+
+	#contact-form h1 {
+		padding-left: 20px;
+	}
+
+	form {
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	.pencil-pic {
+		height:0px;
+		border-top: 15px solid #FF1A39;
+
+	}
+
+
+
+
+}
