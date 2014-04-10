@@ -6,7 +6,7 @@ $message = $_POST['message'];
 
 mail($toemail, 'New message', $message, 'From: ' . $email);
 
-if(mail($toemail, 'New portfolio site message', $message, 'From: ' . $email)) {
+if(mail($toemail, 'New message re: '.$subject , $message, 'From: ' . $email)) {
 	echo "Message sent";
 } else {
 	echo 'Uh oh... Try joseph.charles.marshall@gmail.com';
