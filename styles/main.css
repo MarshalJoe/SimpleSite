@@ -97,10 +97,11 @@ ul, p {
 
 .story a {
 	color: #FF1A39;
+	transition: color 1s;
 }
 
 .story a:hover {
-	color:#B20018;
+	color:black;
 }
 
 .story p {
