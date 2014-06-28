@@ -18,7 +18,7 @@
 	<script type="text/javascript" src="javascript/jquery.stellar.js"></script>
 	<script type="text/javascript" src="javascript/contact.js"></script>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
-	<link href='http://fonts.googleapis.com/css?family=Raleway|Nothing+You+Could+Do|La+Belle+Aurore' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Raleway|Nothing+You+Could+Do' rel='stylesheet' type='text/css'/>
 	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
 
 	</head>
@@ -34,14 +34,14 @@
 				<p>Joe Marshall <span class="asterisk">*</span></p>
 				<p class="subtitle">*front-end developer</p>
 				<br>
-				<!-- <div class="CTA"><a href="#myAnchor" rel="" id="myAnchor">You had me at "front-end"</a></div> -->
+				<div class="CTA"><a class="CTA" href="#myAnchor" rel="" id="anchor1">You had me at front-end</a></div>
 			</div>
 		</div>
 			
 		<article>
 			<div class="large-8 columns large-offset-2">
 				<div class="text">
-					<p>I'm a front-end developer living in Austin, TX: the live music, beard and breakfast taco capital(s) of the world. I tweet <a href="http://twitter.com/joecharmar">here</a>, code <a href="http://github.com/MarshalJoe">here</a>, and advertise my employability <a href="https://www.linkedin.com/pub/joe-marshall/50/553/708">here</a>. Scroll down for samples of my work and a short resume. I'm always looking for new opportunities, freelance, contract and full time.</p>
+					<p>Hi there! I'm a front-end developer living and working in Austin, TX - city of the violet crown; the live music, beard and breakfast taco capital(s) of the world. My github's <a href="http://github.com/MarshalJoe">here</a> and my linkedin <a href="https://www.linkedin.com/pub/joe-marshall/50/553/708">here</a>. Scroll down for project overviews and a contact form. I'm always looking for new opportunities, side projects, and <i>Winds of Winter</i> gossip.</p>
 				</div>
 			</div>
 		</article>
@@ -57,7 +57,7 @@
 		<article>
 			<div class="large-8 columns large-offset-2">
 				<div class="text">
-					<p>Blah Blah Blah some other stuff that I'm typing right now and I'm still styping it man can you believer that still typing motherucker.</p>
+					<p>I'm an alumnus of <a href="http://themakersquare.com">Makersquare</a> and The University of Texas' Plan II honors program - a rigorous interdisciplinary major that stresses analytical and critical thinking.</p>
 				</div>
 			</div>
 		</article>
@@ -69,7 +69,7 @@
 				<br>
 				<br>
 				<br>
-				<p>Blah Blah Blah some other stuff that I'm typing right now and I'm still styping it man can you believer that still typing motherucker. Blah Blah Blah some other stuff that I'm typing right now and I'm still styping it man.</p>
+				<p>Blah Blah Blah some other stuff that I'm typing right now and I'm still styping it man can you believer that still typing motherucker. Blah Blah Blah some other stuff that I'm typing right now and I'm still styping it man can you believer that still typing motherucker.</p>
 			</div>
 		</div>
 
@@ -81,13 +81,6 @@
 					<h2>Ruby on Rails</h2>
 					<h2>Javascript</h2>
 					<h2>HTML5 / CSS3</h2>
-					<h1>Education</h1>
-					<h2>The University of Texas</h2>
-					<ul>
-						<li>Received my B.A. in Plan II Honors (an interdisciplinary honors program between the natural sciences and liberal arts)</li>
-						<li>Attended the Pembroke-Kings Program at Cambridge University, Kings College</li>
-						<li>Recipient of the Dr. Taylor Gilbert Merit Scholarship</li>
-					</ul>
 				</div>
 				<br class="clear">
 		</div>
@@ -95,6 +88,7 @@
 
 	<footer>
 		<div id="contact-form">
+			<a id="myAnchor" name="myAnchor"></a>
 			<div class="row">
 				<div class="large-6 columns">
 					<br>
@@ -105,7 +99,7 @@
 		    		<label for="subject">Subject</label>
 		    		<input id="subject" name='subject' type='text'>
 		    		<label for="message">Message*</label>
-		    		<textarea id="message" name='message' placeholder="How 'bout that Game of Thrones, eh?" required></textarea>
+		    		<textarea id="message" name='message' placeholder="You seem like a capital chap." required></textarea>
 	       		<input class="radius button" type='submit' value="Send">
 	  			</form>
 	  			<div id="loading">Sending your message...</div>
@@ -113,6 +107,7 @@
   			</div>	
 			</div>
 		</div>
+		<div class="footer-text">Copyright 2014 Joe Marshall</div>
 	</footer>
 
 		<script type="text/javascript">
@@ -131,12 +126,12 @@
 
 
         //set up anchor tag to animate scrolls
-    //     $('a').click(function(){
-    // 			$('html, body').animate({
-    //     		scrollTop: $( $(this).attr('href') ).offset().top
-    // 			}, 500);
-    // 			return false;
-				// });
+        $('a').click(function(){
+    			$('html, body').animate({
+        		scrollTop: $( $(this).attr('href') ).offset().top
+    			}, 2000);
+    			return false;
+				});
 
 
 
