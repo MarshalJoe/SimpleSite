@@ -94,6 +94,27 @@ header {
 	line-height: 1.5em;
 }
 
+.CTA {
+	color:white;
+	border: 2px solid white;
+	background-color: rgba(0,0,0,0);
+	width: 280px;
+	height: 55px;
+	font-size: .2em;
+	border-radius: 10px;
+	font-family: "Raleway";
+	float:right;
+	text-align: center;
+	transition: background-color .5s, color .5s;
+
+}
+
+.CTA:hover {
+	background-color:white;
+	color: gray;
+	cursor: pointer;
+}
+
 .subtitle {
 	font-size: .65em;
 	font-family: "Nothing You Could Do";
@@ -108,7 +129,7 @@ header {
 	padding-top: 25px;
 	font-size: 6em;
 	padding-left: 10%;
-	line-height: .15em;
+	line-height: .1em;
 	color:white;
 	font-family: "Raleway";
 	padding-bottom: 10px;
@@ -312,10 +333,6 @@ footer {
 
 @media (max-width: 600px) {
 
-	.text-box {
-		text-align: left;
-	}
-
 	.mobile-only {
 		display:block;
 	}
@@ -384,11 +401,6 @@ footer {
 		margin-right: 25px;
 	}
 
-	.pencil-pic {
-		height:0px;
-		border-top: 15px solid #FF1A39;
-
-	}
 
 
 

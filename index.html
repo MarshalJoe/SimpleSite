@@ -2,9 +2,8 @@
 <html>
 	<head>
 
-	<meta name="robots" content="index,follow" />
 	<meta name="description" content="Joe Marshall is a content writer and web developer specialising in front-end technology using HTML5, CSS3, JavaScript, and jQuery from Austin, TX. This is my portfolio site." />
-    <meta name="keywords" content="Joe,Marshall, Joe Marshall,Front-end,Front End development,HTML,HTML 5,CSS,CSS3,javascript,Object Oriented, jQuery,Responsive Design, Development, Web Design, User Experience, Mobile Interface, Design, Austin, Texas, United States, Austin Web Developer, Austin Web Development" />
+    <meta name="keywords" content="Joe, Marshall, Joe Marshall,Front-end,Front End development,HTML,HTML 5,CSS,CSS3,javascript, jQuery,Responsive Design, Development, Web Design, User Experience, Mobile Interface, Design, Austin, Texas, United States, Austin Web Developer, Austin Web Development" />
 	<meta name="author" content="Joe Marshall" />
 
 	<meta name="viewport" content="width=device-width, user-scalable=no">
@@ -27,16 +26,15 @@
 	<body>
 		
 		<header>
-			
 		</header>
 
 			
 		<div class="splash" data-stellar-background-ratio="0.5">
 			<div class="greeting">
-				<div class="text-box">
-					<p>Joe Marshall <span class="asterisk">*</span></p>
-					<p class="subtitle">*front-end developer</p>
-				</div>
+				<p>Joe Marshall <span class="asterisk">*</span></p>
+				<p class="subtitle">*front-end developer</p>
+				<br>
+				<div class="CTA"><p>You had me at "front-end"</p></div>
 			</div>
 		</div>
 			
@@ -78,7 +76,7 @@
 
 		<div class="resume" id="experienceAnchor">
 
-				<div class="container large-10 large-offset-1 columns">
+				<div class="large-10 large-offset-1 columns">
 					<div class="margin-expander"></div>
 					<h2>Ruby on Rails</h2>
 					<h2>Javascript</h2>
@@ -98,7 +96,7 @@
 	<footer>
 		<div id="contact-form">
 			<div class="row">
-				<div class="large-6 columns" >
+				<div class="large-6 columns">
 					<br>
 					<br>
 					<form method='post' action=''>
@@ -124,38 +122,21 @@
 			$(window).scroll(function(i){
     		var scrollVar = $(window).scrollTop();
     		$('.greeting').css({'opacity':( 400-scrollVar )/400});
+
 			})
 			
-			//hover events for projects
-			var projectFade = function (element, img_url) {
-				$(element).hover(
-				function () {
-						$(element).css({"background": "", "background-color": "#FF1A39"});
-						$(element + " .project-info").fadeIn();
-					}, function () {
-						$(element + " .project-info").hide();
-						$(element).css({"background-color": "", "background": "url(" + img_url + ")"});
-					}
-				);
-			};
+// <a href="#myAnchor" rel="" id="anchor1" class="anchorLink">Link to the anchor</a>
 
-			projectFade("#spiceworks", "images/spiceworks.png");
-			projectFade("#prepify", "images/prepify.png");
-			projectFade("#sxsw", "images/sxsw.png");
-			projectFade("#alcalde", "images/alcalde.png");
-			projectFade("#culturemap", "images/culturemap.png");
-
-			
-
+// <a name="myAnchor" id="myAnchor"><strong>Where i want to go</strong></a>
 
 
         //set up anchor tag to animate scrolls
-        $('a').click(function(){
-    			$('html, body').animate({
-        		scrollTop: $( $(this).attr('href') ).offset().top
-    			}, 500);
-    			return false;
-				});
+    //     $('.CTA').click(function(){
+    // 			$('html, body').animate({
+    //     		scrollTop: $( $(this).attr('href') ).offset().top
+    // 			}, 500);
+    // 			return false;
+				// });
 
 
 
