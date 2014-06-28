@@ -26,66 +26,28 @@
 
 	<body>
 		
-		<div class="header">
-			<div class="name"><a href="#homeAnchor">Joe Marshall</a></div>
-			<ul class="header-links">
-				<li class="links"><a href="#projectAnchor">PROJECTS</a></li>
-				<li class="links"><a href="#experienceAnchor">EXPERIENCE</a></li>
-				<li class="links"><a href="#contactAnchor">CONTACT</a></li>
-			</ul>
-
-		</div>
+		<header>
+			
+		</header>
 
 			
-		<div class="splash" id="homeAnchor">
+		<div class="splash" data-stellar-background-ratio="0.5">
 			<div class="greeting">
 				<div class="text-box">
-					<p class="mobile-only hi">Hi there.</p>
-					<p>I am currently</p>
-					<p><span class="available">available</span> for</p>
-					<p>new projects.</p>
-					<p class="mobile-only signoff">New projects, you say? <i class="fa fa-angle-down"></i></p>
+					<p>Joe Marshall <span class="asterisk">*</span></p>
+					<p class="subtitle">*front-end developer</p>
 				</div>
 			</div>
 		</div>
 			
-		<div class="story">
+		<article>
 			<div class="large-8 columns large-offset-2">
 				<div class="text">
-					<h1>Hi</h1>
-					<p>I am a front-end developer and content writer living in Austin, TX: the live music, beard and breakfast taco capital(s) of the world. I tweet <a href="http://twitter.com/joecharmar">here</a>, code <a href="http://github.com/MarshalJoe">here</a>, and advertise my employability <a href="https://www.linkedin.com/pub/joe-marshall/50/553/708">here</a>. Scroll down for samples of my work and a short resume. I'm always looking for new opportunities, freelance, contract and full time.</p>
+					<p>I'm a front-end developer living in Austin, TX: the live music, beard and breakfast taco capital(s) of the world. I tweet <a href="http://twitter.com/joecharmar">here</a>, code <a href="http://github.com/MarshalJoe">here</a>, and advertise my employability <a href="https://www.linkedin.com/pub/joe-marshall/50/553/708">here</a>. Scroll down for samples of my work and a short resume. I'm always looking for new opportunities, freelance, contract and full time.</p>
 				</div>
 			</div>
-		</div>
+		</article>
 
-
-		<div class="code-container" id="projectAnchor">
-			<div class="divider"></div>
-			<div class="code-content">
-
-				<div class="row">
-					<div id="spiceworks" style="background: url(images/spiceworks.png)" class="project large-6 columns">
-						<div class="project-info"><h1>Spiceworks</h1><p>Windows XP dies a terrible death this month. Here's a piece I wrote about coping with its coming end of life.</p><a href="http://www.spiceworks.com/voit/reports/windows-xp-end-of-life/">XP, We Hardly Knew Thee</a></div>
-					</div>
-					<div id="prepify" style="background: url(images/prepify.png)" class="project large-6 columns">
-						<div class="project-info"><h1>Prepify</h1><p>This interactive SAT prep tool comes in two flavors: an older, original MakerSquare version and a LAUNCH reboot.</p><p><a href="https://github.com/MarshalJoe/Prepify">MakerSquare</a> | <a href="https://github.com/fremn/prepify_launch">Reboot</a></p></div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div id="sxsw" style="background: url(images/sxsw.png)" class="project large-4 columns">
-						<div class="project-info"><h1>SXSW</h1><p>Every year I do some work for the SXSW Film blog. This year I interviewed local filmmakers about the city.</p><a href="http://sxsw.com/film/news/2014/learn-local-insider-tips-yake-smith">All Things Austin</a></div>
-					</div>
-					<div id="alcalde"  style="background: url(images/alcalde.png)" class="project large-4 columns">
-						<div class="project-info"><h1>The Alcalde</h1><p>The UT alumni magazine is your best 40 acres beat. This piece marks the <em>Travesty</em>'s 15th anniversary.</p><a href="http://alcalde.texasexes.org/2012/04/area-humor-publication-is-worlds-greatest/">Explore the 40</a></div>
-					</div>
-					<div id="culturemap" style="background: url(images/culturemap.png)" class="project large-4 columns">
-						<div class="project-info"><h1>Culturemap</h1><p>Ever wanted a breakdown of Austin's arcade selection? Lucky you! I have just the thing...</p><a href="http://austin.culturemap.com/news/innovation/08-26-11-19-09-games-of-all-genus-genius-arcade-edition/">Game/Read On</a></div>
-
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<div class="resume" id="experienceAnchor">
 
@@ -145,7 +107,7 @@
 
 
 
-<div class="pencil-pic" style="background: url(images/pen.jpg); background-size: cover" data-stellar-background-ratio="0.5">
+<div class="pencil-pic" style="background: url(images/pen.jpg); background-size: cover">
 </div>
 
 <div id="contactAnchor" class="contact-section">
@@ -179,6 +141,12 @@
 
 		<script type="text/javascript">
 		$( document ).ready(function() {
+
+			//fade my name/the rest of the greeting
+			$(window).scroll(function(i){
+    		var scrollVar = $(window).scrollTop();
+    		$('.greeting').css({'opacity':( 300-scrollVar )/300});
+			})
 			
 			//hover events for projects
 			var projectFade = function (element, img_url) {
@@ -200,41 +168,6 @@
 			projectFade("#culturemap", "images/culturemap.png");
 
 			
-
-
-			//calculates scroll distance on event, tweaks header style
-				$(window).scroll(function (e) {
-					var y = $(this).scrollTop();
-
-					var headerHeight = $(".header").height();
-					var splashHeight = $(".splash").height();
-					var storyHeight = $(".story").height();
-
-					var borderRed = splashHeight - headerHeight;
-					var borderBlack = borderRed + storyHeight;
-
-					if (y > borderRed) {
-						$(".header").css({"background-color": "white", "color": "black"});
-						$(".header a").css({"color":"black"});
-
-					} else {
-						$(".header").css({"background-color": "#FF1A39", "color": "white"});
-						$(".header a").css({"color":"white"});
-					}
-
-					if (y > 50) {
-						$(".header").css({"border-bottom": "1px solid black"});
-					} else {
-						$(".header").css({"border-bottom": ""});
-					}
-
-					if (y > borderBlack) {
-						$(".header").css({"border-bottom": "2px solid white", "background-color": "black", "color": "white"});
-						$(".header a").css({"color":"white"});
-
-					};
-
-				});
 
 				//resizes splash image to fit full screen
 				$(window).resize(function (e) {

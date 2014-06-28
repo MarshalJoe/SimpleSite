@@ -12,7 +12,6 @@ body, html {
 }
 
 a {
-	color:white;
 	text-decoration: none;
 	font-family: "Raleway";
 }
@@ -29,70 +28,69 @@ ul, p {
 /*header stuff*/
 
 
-.header {
+header {
 	width: 100%;
-	height: 70px;
-	background-color: #FF1A39;
-	position:fixed;
-	z-index: 100;
-}
-
-.name {
-	line-height: 70px;
-	font-size: 2em;
-	display: inline-block;
-	margin-left: 25px;
-	font-family: "Raleway";
+	height: 15px;
+	background-color: white;
 }
 
 .header-links {
 	list-style-type: none;
 	margin:0px;
-	line-height: 70px;
+	line-height: 35px;
 	float:right;
 	width: 400px;
 	margin-right: 5px;
+	color:black;
 }
 
 .links {
 	font-family: "Raleway";
 	display:inline-block;
 	line-height: 70px;
-	font-size: .75em;
+	font-size: .5em;
 	margin-left: 7%;
 }
 
 /*main body*/
 
 .splash {
-	background-color: #FF1A39;
+	background-image: url("computer.jpg");
+	background-attachment: fixed;
+	background-size:cover;
 	position: relative;
 	height: 100%;
 }
 
+.subtitle {
+	font-size: .65em;
+	font-family: "Nothing You Could Do";
+}
+
+.asterisk {
+	font-family: "Nothing You Could Do";
+	margin-left: -20px;
+}
+
 .greeting {
-	padding-top: 80px;
-	font-size: 5em;
-	text-align: center;
-	line-height: .5em;
+	padding-top: 25px;
+	font-size: 6em;
+	padding-left: 10%;
+	line-height: .15em;
 	color:white;
 	font-family: "Raleway";
 	padding-bottom: 10px;
+	position:fixed;
+	z-index: 2;
 }
 
-.hi {
-	font-size: 1.4em;
-}
 
-.available {
-	font-family: "Nothing You Could Do";
-	font-size: 1.1em;
-}
-
-.story {
+article {
 	height: 350px;
 	background-color: white;
 	line-height: 1.5em;
+	z-index: 3;
+	position:relative;
 }
 
 .story a {
@@ -187,6 +185,8 @@ ul, p {
 	max-height: 4000px;
 	padding: 50px;
 	border-top: 2px solid #FF1A39;
+	position: relative;
+	z-index: 4;
 }
 
 .resume .subtitle {
