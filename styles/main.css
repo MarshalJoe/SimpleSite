@@ -1,5 +1,5 @@
 /* margin strip + housekeeping */
-body, div, h1, h2, h3, h4, h5, h6 {
+body {
 	margin: 0px;
 }
 
@@ -74,6 +74,22 @@ header {
 	font-size: "Raleway";
 }
 
+.splash3 {
+	height:500px;
+	background-image: url("citysky.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.splash3 p {
+	margin: 0;
+	padding-top: 35px;
+	padding-left: 50px;
+	font-size: 6.5em;
+	color:black;
+	font-family: "Raleway";
+}
+
 .subtitle {
 	font-size: .65em;
 	font-family: "Nothing You Could Do";
@@ -120,15 +136,6 @@ article a:hover {
 	margin-top: 30px;
 }
 
-.code-pic {
-	width:100%;
-	height:500px;
-}
-
-.pencil-pic {
-	width:100%;
-	height: 355px;
-}
 
 .text {
 	margin-top: 90px;
@@ -193,12 +200,10 @@ article a:hover {
 
 .resume {
 	width:100%;
-	background-color: black;
-	color:white;
-	min-height:1000px;
-	max-height: 4000px;
+	background-color: white;
+	color:black;
 	padding: 50px;
-	border-top: 2px solid #FF1A39;
+	border-top: 2px solid gray;
 	position: relative;
 	z-index: 4;
 }
@@ -224,12 +229,6 @@ article a:hover {
 	font-family: "Raleway";
 }
 
-
-.contact-section {
-	width: 100%;
-	background-color:black;
-}
-
 #contact-form h1 {
 	color: #FF1A39;
 	font-size: 2.5em;
@@ -240,6 +239,7 @@ article a:hover {
 
 #contact-form {
 	font-family: "Raleway";
+	background-color: #282828;
 }
 
 #contact-form h2 {
@@ -260,11 +260,6 @@ article a:hover {
 
 #contact-form textarea {
 	height: 150px;
-}
-
-#contact-form .container {
-    width: 60%;
-    margin-left: 150px;
 }
 
 .button {
@@ -296,20 +291,11 @@ article a:hover {
 
 /*footer stuff*/
 
-.footer {
+footer {
 	border-top: 15px solid #FF1A39;
 	width: 100%;
-	background-color:black;
-	height: 50px;
 	position: relative;
 	color:white;
-}
-
-.footer-text {
-	line-height: 1.25em;
-	position:absolute;
-	left:15px;
-	bottom:5px;
 }
 
 
@@ -383,11 +369,6 @@ article a:hover {
 	.signoff {
 		color: #B20018;
 		font-size: .5em;
-	}
-
-	#contact-form .container {
-    width: 100%;
-    margin: 0px;
 	}
 
 	#contact-form h1 {
