@@ -81,13 +81,17 @@ header {
 	background-attachment: fixed;
 }
 
-.splash3 p {
+.splash3 .title {
 	margin: 0;
 	padding-top: 35px;
-	padding-left: 50px;
 	font-size: 6.5em;
 	color:black;
 	font-family: "Raleway";
+}
+
+.splash3 p {
+	color: white;
+	line-height: 1.5em;
 }
 
 .subtitle {
@@ -124,7 +128,7 @@ article {
 }
 
 article a {
-	color: #FF1A39;
+	color: #0000f5;
 	transition: color 1s;
 }
 
@@ -218,7 +222,7 @@ article a:hover {
 }
 
 .resume h2 {
-	color:#FF1A39;
+	color:#1b265b;
 	font-family: "Raleway";
 }
 
@@ -230,7 +234,7 @@ article a:hover {
 }
 
 #contact-form h1 {
-	color: #FF1A39;
+	color: #1b265b;
 	font-size: 2.5em;
 	padding-top: 50px;
 	padding-bottom: 20px;
@@ -265,11 +269,11 @@ article a:hover {
 .button {
 	margin-bottom: 35px;
 	font-family: "Raleway";
-	background-color: #FF1A39;
+	background-color: #1b265b;
 }
 
 .button:hover {
-	background-color: #B20018;
+	background-color: #0000f5;
 }
 
 #loading {
@@ -292,7 +296,7 @@ article a:hover {
 /*footer stuff*/
 
 footer {
-	border-top: 15px solid #FF1A39;
+	border-top: 15px solid #1b265b;
 	width: 100%;
 	position: relative;
 	color:white;
