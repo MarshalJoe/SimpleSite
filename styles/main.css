@@ -91,7 +91,9 @@ header {
 
 .splash3 p {
 	color: white;
-	line-height: 1.5em;
+	line-height: 1.25em;
+	font-size: 1.2em;
+	font-family: "Oxygen";
 }
 
 .CTA {
@@ -174,6 +176,7 @@ article a:hover {
 	border-top: 2px solid gray;
 	position: relative;
 	z-index: 4;
+	font-family: "Oxygen";
 }
 
 .resume .subtitle {
@@ -181,8 +184,8 @@ article a:hover {
 }
 
 .resume p, ul {
-	line-height: 1.3em;
 	font-size: 1.1em;
+	line-height: 1.25em;
 }
 
 .resume h2 {
@@ -195,6 +198,10 @@ article a:hover {
 	line-height: 1.5em;
 	margin-bottom: 30px;
 	font-family: "Raleway";
+}
+
+.resume a {
+	color:#0000f5;
 }
 
 #contact-form h1 {

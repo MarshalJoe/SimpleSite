@@ -18,7 +18,7 @@
 	<script type="text/javascript" src="javascript/jquery.stellar.js"></script>
 	<script type="text/javascript" src="javascript/contact.js"></script>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
-	<link href='http://fonts.googleapis.com/css?family=Raleway|Nothing+You+Could+Do' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Raleway|Nothing+You+Could+Do|Oxygen' rel='stylesheet' type='text/css'/>
 	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
 
 	</head>
@@ -32,16 +32,16 @@
 		<div class="splash" data-stellar-background-ratio="0.5">
 			<div class="greeting">
 				<p>Joe Marshall <span class="asterisk">*</span></p>
-				<p class="subtitle">*front-end developer</p>
+				<p class="subtitle">*copywriter</p>
 				<br>
-				<div class="CTA"><a class="CTA" href="#myAnchor" rel="" id="anchor1">You had me at front-end</a></div>
+				<div class="CTA"><a class="CTA" href="#myAnchor" rel="" id="anchor1">You had me at copy</a></div>
 			</div>
 		</div>
 			
 		<article>
 			<div class="large-8 columns large-offset-2">
 				<div class="text">
-					<p>Hi there! I'm a front-end developer living and working in Austin, TX - city of the violet crown; the live music, beard and breakfast taco capital(s) of the world. My github's <a href="http://github.com/MarshalJoe">here</a> and my linkedin <a href="https://www.linkedin.com/pub/joe-marshall/50/553/708">here</a>. Scroll down for project overviews and a contact form. I'm always looking for new opportunities, side projects, and <i>Winds of Winter</i> gossip.</p>
+					<p>Hi there! I'm a copywriter living and working in Austin, TX - city of the violet crown; the live music, beard and breakfast taco capital(s) of the world. My github's (I also code a bit) <a href="http://github.com/MarshalJoe">here</a> and my linkedin <a href="https://www.linkedin.com/pub/joe-marshall/50/553/708">here</a>. Scroll down for projects, writing samples and a contact form. I'm always looking for new opportunities, side projects, and <i>Winds of Winter</i> gossip.</p>
 				</div>
 			</div>
 		</article>
@@ -49,9 +49,9 @@
 		<div class="splash2" data-stellar-background-ratio="0.5">
 			<br>
 			<br>
-			<p>Semantic HTML5</p>
-			<p>Responsive CSS3</p>
-			<p>Concise JS, Ruby, RoR</p>
+			<p>Clear</p>
+			<p>Concise</p>
+			<p>Entertaining</p>
 		</div>
 
 		<article>
@@ -78,7 +78,13 @@
 
 				<div class="large-10 large-offset-1 columns">
 					<div class="margin-expander"></div>
-					<h2>Ruby on Rails</h2>
+					<h2>Ruby / RoR</h2>
+					<p>Project: Prepify</p>
+					<p>Timeline: 2 weeks (1.0) and 2 days (2.0)</p>
+					<p>Tech Stack: Ruby on Rails, Javascript, AJAX, Jquery, Postgres, Backbone.js, HTML5, CSS3</p>
+					<p>Description: Working in conjunction with graduate students from the McCombs School of Business, the Prepify team created a functioning model for a quiz client designed to make SAT prep within reach of everyone. The second version was created at a subsequent hackathon as an attempt to reboot the first.</p>
+					<p>Technical challenge (and how I overcame it): After writing code for a subscription email designed to introduce new users, I was having trouble making Rails ActionMailer fire on the signup event. After tracing the stack of the rails server, I realized the original rails create action was never being called - instead it was a custom Devise function (an authentication gem) that was getting invoked, with user as well as session creation logic. To fix the issue, I introduced a new custom create action that inherited from the Devise function, invoking the same method with the keyword "super" to ensure authentication was preserved, while adding the new mail logic below. Classical inheritance: a programmer's best friend.</p>
+					<p>Codebase: <a href="">Original Repo</a>, <a href="">Repo 2.0</a></p>
 					<h2>Javascript</h2>
 					<h2>HTML5 / CSS3</h2>
 				</div>
@@ -129,7 +135,7 @@
         $('a').click(function(){
     			$('html, body').animate({
         		scrollTop: $( $(this).attr('href') ).offset().top
-    			}, 2000);
+    			}, 1000);
     			return false;
 				});
 
