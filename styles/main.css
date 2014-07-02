@@ -100,7 +100,7 @@ header {
 	color:white;
 	border: 1px solid white;
 	background-color: rgba(0,0,0,0);
-	width: 300px;
+	width: 235px;
 	height: 60px;
 	line-height: 56px;
 	font-size: .47em;
@@ -142,13 +142,11 @@ header {
 
 
 article {
-	height: 250px;
+	height: 235px;
 	background-color: white;
 	line-height: 1.5em;
 	z-index: 3;
 	position:relative;
-	border-top: 2px solid gray;
-	border-bottom: 2px solid gray;
 }
 
 article a {
@@ -167,6 +165,20 @@ article a:hover {
 	margin-left: auto;
 }
 
+
+/*project tab stuff*/
+
+.project {
+	text-align: center;
+	height: 250px;
+	border: 1px solid red;
+}
+
+.project-info {
+	display:none;
+}
+
+/* resume stuff*/
 
 .resume {
 	width:100%;
