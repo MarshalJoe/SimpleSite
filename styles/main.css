@@ -92,7 +92,7 @@ header {
 .splash3 p {
 	color: white;
 	line-height: 1.25em;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	font-family: "Oxygen";
 }
 
@@ -142,11 +142,15 @@ header {
 
 
 article {
-	height: 235px;
+	min-height: 235px;
 	background-color: white;
 	line-height: 1.5em;
 	z-index: 3;
 	position:relative;
+	display:table-cell;
+	vertical-align: middle;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 article a {
@@ -159,19 +163,12 @@ article a:hover {
 }
 
 
-.text {
-	margin-top: 60px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-
 /*project tab stuff*/
 
 .project {
 	text-align: center;
 	height: 250px;
-	border: 1px solid red;
+	border: 1px solid gray;
 }
 
 .project-info {
@@ -320,11 +317,6 @@ footer {
 		margin-left: 25px;
 	}
 
-	article p {
-		margin-top: 10px;
-		line-height: 1.25em;
-	}
-
 	.resume {
 		padding: 30px;
 		margin-right: auto;
@@ -332,9 +324,6 @@ footer {
 		font-size: .8em;
 	}
 
-	.contact h2 {
-		font-size: 1em;
-	}
 
 	.signoff {
 		color: #B20018;

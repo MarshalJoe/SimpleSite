@@ -40,9 +40,8 @@
 			
 		<article>
 			<div class="large-8 columns large-offset-2">
-				<div class="text">
-					<p>Hi there! I'm a copywriter living and working in Austin, TX - city of the violet crown; the live music, beard and breakfast taco capital(s) of the world. My github (I also code a bit) is <a href="http://github.com/MarshalJoe">here</a> and my linkedin <a href="https://www.linkedin.com/pub/joe-marshall/50/553/708">here</a>. Scroll down for projects, writing samples and a contact form. I'm always looking for new opportunities, side projects, and <i>Winds of Winter</i> gossip.</p>
-				</div>
+				<p>Hi there! I'm a copywriter living and working in Austin, TX - city of the violet crown; the live music, beard and breakfast taco capital(s) of the world. My github (I also code a bit) is <a href="http://github.com/MarshalJoe">here</a> and my linkedin <a href="https://www.linkedin.com/pub/joe-marshall/50/553/708">here</a>. Scroll down for projects, writing samples and a contact form. I'm always looking for new opportunities, side projects, and <i>Winds of Winter</i> gossip.
+				</p>
 			</div>
 		</article>
 
@@ -55,9 +54,8 @@
 
 		<article>
 			<div class="large-8 columns large-offset-2">
-				<div class="text">
-					<p>I'm an alumnus of <a href="http://themakersquare.com">Makersquare</a> and The University of Texas' Plan II honors program - a rigorous interdisciplinary major that stresses analytical and critical thinking. I also had the good fortune to study (linguistics) abroad at Cambridge - an experience I'll never forget.</p>
-				</div>
+				<p>I'm an alumnus of <a href="http://themakersquare.com">Makersquare</a> and The University of Texas' Plan II honors program - a rigorous interdisciplinary major that stresses analytical and critical thinking. I also had the good fortune to study (linguistics) abroad at Cambridge - an experience I'll never forget.
+				</p>
 			</div>
 		</article>
 
@@ -76,12 +74,13 @@
 		<div class="resume" id="experienceAnchor">
 			
 			<div class="row">
-				<div id="spiceworks" class="project large-6 columns">
+				<div id="spiceworks" class="project large-4 columns">
 					<div class="project-info"><h1>Spiceworks</h1><p>Windows XP died a terrible death in April. Here's a piece I wrote about coping with its coming end of life.</p><a href="http://www.spiceworks.com/voit/reports/windows-xp-end-of-life/">XP, We Hardly Knew Thee</a></div>
 				</div>
-				<div id="prepify" class="project large-6 columns">
+				<div id="prepify" class="project large-4 columns">
 					<div class="project-info"><h1>Prepify</h1><p>This interactive SAT prep tool comes in two flavors: an older, original MakerSquare version and a LAUNCH reboot.</p><p><a href="https://github.com/MarshalJoe/Prepify">MakerSquare</a> | <a href="https://github.com/fremn/prepify_launch">Reboot</a></p></div>
 				</div>
+				<div class="project large-4 columns"></div>
 			</div>
 
 			<div class="row">
@@ -99,16 +98,8 @@
 			<div class='row'>
 				<div class="large-10 columns">
 					<div class="margin-expander"></div>
-					<br>
-					<h2>Ruby / RoR</h2>
-					<p>Project: Prepify</p>
-					<p>Timeline: 2 weeks (1.0) and 2 days (2.0)</p>
-					<p>Tech Stack: Ruby on Rails, Javascript, AJAX, Jquery, Postgres, Backbone.js, HTML5, CSS3</p>
-					<p>Description: Working in conjunction with graduate students from the McCombs School of Business, the Prepify team created a functioning model for a quiz client designed to make SAT prep within reach of everyone. The second version was created at a subsequent hackathon as an attempt to reboot the first.</p>
-					<p>Technical challenge (and how I overcame it): After writing code for a subscription email designed to introduce new users, I was having trouble making Rails ActionMailer fire on the signup event. After tracing the stack of the rails server, I realized the original rails create action was never being called - instead it was a custom Devise function (an authentication gem) that was getting invoked, with user as well as session creation logic. To fix the issue, I introduced a new custom create action that inherited from the Devise function, invoking the same method with the keyword "super" to ensure authentication was preserved, while adding the new mail logic below. Classical inheritance: a programmer's best friend.</p>
-					<p>Codebase: <a href="">Original Repo</a>, <a href="">Repo 2.0</a></p>
-					<h2>Javascript</h2>
-					<h2>HTML5 / CSS3</h2>
+					
+					
 				</div>
 				<br class="clear">
 			</div>
