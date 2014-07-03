@@ -17,7 +17,6 @@
 		
 	<script type="text/javascript" src="javascript/jquery.stellar.js"></script>
 	<script type="text/javascript" src="javascript/contact.js"></script>
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
 	<link href='http://fonts.googleapis.com/css?family=Raleway|Nothing+You+Could+Do|Oxygen' rel='stylesheet' type='text/css'/>
 	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
 
@@ -66,7 +65,7 @@
 				<br>
 				<br>
 				<br>
-				<p>I've had the good fortune in my young career to work with some major heavy-hitters, providing everything from blogs, to web copy, to banner ads for places like Spiceworks, SXSW and HP.</p>
+				<p>I'm a generalist. In service to various contracts I've written banners, product demo scripts, executive notes, infographics, internal policy documents, job descriptions, conference bios and session copy, magazine articles, data surveys, whitepapers and blogs (oh the blogs). Not to mention a fair bit of code. Below is a drive-by smattering of some of my favorites.</p>
 			</div>
 		</div>
 
@@ -74,23 +73,23 @@
 		<div class="resume" id="experienceAnchor">
 			
 			<div class="row">
-				<div id="spiceworks" class="project large-4 columns">
-					<div class="project-info"><h1>Spiceworks</h1><p>Windows XP died a terrible death in April. Here's a piece I wrote about coping with its coming end of life.</p><a href="http://www.spiceworks.com/voit/reports/windows-xp-end-of-life/">XP, We Hardly Knew Thee</a></div>
+				<div id="spiceworks" class="project large-4 columns" style="background-image:url('styles/images/spiceworks.png');">
+					<div class="project-info"><h1>Spiceworks</h1><p>Windows XP died a terrible death in April of this year. Here's a piece I wrote about coping with its end of life.</p><a href="http://www.spiceworks.com/voit/reports/windows-xp-end-of-life/">XP, We Hardly Knew Thee</a></div>
 				</div>
-				<div id="prepify" class="project large-4 columns">
+				<div id="prepify" class="project large-4 columns" style="background-image:url('styles/images/prepify.png');">
 					<div class="project-info"><h1>Prepify</h1><p>This interactive SAT prep tool comes in two flavors: an older, original MakerSquare version and a LAUNCH reboot.</p><p><a href="https://github.com/MarshalJoe/Prepify">MakerSquare</a> | <a href="https://github.com/fremn/prepify_launch">Reboot</a></p></div>
 				</div>
 				<div class="project large-4 columns"></div>
 			</div>
 
 			<div class="row">
-				<div id="sxsw" class="project large-4 columns">
+				<div id="sxsw" class="project large-4 columns" style="background-image:url('styles/images/sxsw.png');">
 					<div class="project-info"><h1>SXSW</h1><p>Every year I do some work for the SXSW Film blog. This year I interviewed local filmmakers about the city.</p><a href="http://sxsw.com/film/news/2014/learn-local-insider-tips-yake-smith">All Things Austin</a></div>
 				</div>
-				<div id="alcalde" class="project large-4 columns">
+				<div id="alcalde" class="project large-4 columns" style="background-image:url('styles/images/alcalde.png');">
 					<div class="project-info"><h1>The Alcalde</h1><p>The UT alumni magazine is your best 40 acres beat. This piece marks the <em>Travesty</em>'s 15th anniversary.</p><a href="http://alcalde.texasexes.org/2012/04/area-humor-publication-is-worlds-greatest/">Explore the 40</a></div>
 				</div>
-				<div id="culturemap" class="project large-4 columns">
+				<div id="culturemap" class="project large-4 columns" style="background-image:url('styles/images/culturemap.png');">
 					<div class="project-info"><h1>Culturemap</h1><p>Ever wanted a breakdown of Austin's arcade selection? Lucky you! I have just the thing...</p><a href="http://austin.culturemap.com/news/innovation/08-26-11-19-09-games-of-all-genus-genius-arcade-edition/">Game/Read On</a></div>
 				</div>
 			</div>
@@ -155,10 +154,25 @@
     			return false;
 				});
 
-				// Set up hover state
+				// Set up hover state for projects
+				//hover events for projects
+				var projectFade = function (element, img_url) {
+					$(element).hover(
+					function () {
+							$(element).css({"background": "", "background-color": "#0000f5"});
+							$(element + " .project-info").fadeIn();
+						}, function () {
+							$(element + " .project-info").hide();
+							$(element).css({"background-color": "", "background-image": img_url});
+						}
+					);
+				};
 
-
-
+				projectFade("#prepify", "url('styles/images/prepify.png')");
+				projectFade("#sxsw", "url('styles/images/sxsw.png')");
+				projectFade("#spiceworks", "url('styles/images/spiceworks.png')");
+				projectFade("#culturemap", "url('styles/images/culturemap.png')");
+				projectFade("#alcalde", "url('styles/images/alcalde.png')");
 
 				// stellar.js parallax scrolling plugin configuration
 				$("body").stellar({

@@ -34,28 +34,10 @@ header {
 	background-color: white;
 }
 
-.header-links {
-	list-style-type: none;
-	margin:0px;
-	line-height: 35px;
-	float:right;
-	width: 400px;
-	margin-right: 5px;
-	color:black;
-}
-
-.links {
-	font-family: "Raleway";
-	display:inline-block;
-	line-height: 70px;
-	font-size: .5em;
-	margin-left: 7%;
-}
-
 /*main body*/
 
 .splash {
-	background-image: url("computer.jpg");
+	background-image: url("images/computer.jpg");
 	background-attachment: fixed;
 	background-size:cover;
 	position: relative;
@@ -64,8 +46,8 @@ header {
 
 .splash2 {
 	width: 100%;
-	height: 500px;
-	background-image: url("bridge.JPG");
+	height: 525px;
+	background-image: url("images/bridge.JPG");
 	background-size: cover;
 	background-attachment: fixed;
 	text-align: center;
@@ -75,8 +57,8 @@ header {
 }
 
 .splash3 {
-	height:500px;
-	background-image: url("citysky.jpg");
+	height:525px;
+	background-image: url("images/citysky.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -92,8 +74,8 @@ header {
 .splash3 p {
 	color: white;
 	line-height: 1.25em;
-	font-size: 1.3em;
-	font-family: "Oxygen";
+	font-size: 1.25em;
+	font-family: "Raleway";
 }
 
 .CTA {
@@ -114,7 +96,7 @@ header {
 
 .CTA:hover {
 	background-color:white;
-	color: gray;
+	color: #303030;
 	cursor: pointer;
 }
 
@@ -172,7 +154,15 @@ article a:hover {
 }
 
 .project-info {
+	padding-top: 35px;
 	display:none;
+	color:white;
+	font-family: "Oxygen";
+	font-size: .8em;
+}
+
+.project-info a {
+	color:white;
 }
 
 /* resume stuff*/
@@ -209,9 +199,7 @@ article a:hover {
 	font-family: "Raleway";
 }
 
-.resume a {
-	color:#0000f5;
-}
+/* contact form */
 
 #contact-form h1 {
 	color: #1b265b;
@@ -296,21 +284,7 @@ footer {
 
 @media (max-width: 600px) {
 
-	.mobile-only {
-		display:block;
-	}
 
-	.name, .header, .header-links {
-		display: none;
-	}
-
-	.links {
-		margin: 8px;
-	}
-
-	.greeting p {
-		padding-top: 0px;
-	}
 
 	article {
 		margin-right: 25px;
@@ -336,7 +310,21 @@ footer {
 		margin-right: 10px;
 	}
 
+	.splash .greeting {
+		font-size: 3.25em;
+		line-height: 1.25em
+	}
 
+	.splash .CTA {
+		display:none;
+	}
+
+	.splash3 .title {
+		font-size: 4.5em;
+	}
+	.splash3 p {
+		font-size: 1.25em;
+	}
 
 
 
