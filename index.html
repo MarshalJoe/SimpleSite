@@ -33,7 +33,7 @@
 				<p>Joe Marshall <span class="asterisk">*</span></p>
 				<p class="subtitle">*copy/content writer</p>
 				<br>
-				<div class="CTA"><a class="CTA" href="#myAnchor" rel="" id="anchor1">YOU HAD ME AT COPY</a></div>
+				<div class="CTA"><a class="CTA" href="#myAnchor" rel="" id="anchor1">YOU HAD ME AT JOE</a></div>
 			</div>
 		</div>
 			
@@ -53,7 +53,7 @@
 
 		<article>
 			<div class="large-8 columns large-offset-2">
-				<p>I'm an alumnus of <a href="http://themakersquare.com">Makersquare</a> and The University of Texas' Plan II honors program - a rigorous interdisciplinary major that stresses analytical and critical thinking. I also had the good fortune to study (linguistics) abroad at Cambridge - an experience I'll never forget.
+				<p>I'm an alumnus of <a href="http://themakersquare.com">Makersquare</a> and The University of Texas' Plan II honors program - a rigorous interdisciplinary major that stresses analytical and critical thinking. And writing. Lots of writing. I also had the good fortune to study (linguistics) abroad at Cambridge - an experience I'll never forget.
 				</p>
 			</div>
 		</article>
@@ -65,7 +65,7 @@
 				<br>
 				<br>
 				<br>
-				<p>I'm a generalist. In service to various contracts I've written banners, product demo scripts, executive notes, infographics, internal policy documents, job descriptions, conference bios and session copy, magazine articles, data surveys, whitepapers and blogs (oh the blogs). Not to mention a fair bit of code. Below is a drive-by smattering of some of my favorites.</p>
+				<p>I'm a generalist. I've written banners, product demo scripts, executive notes, infographics, internal policy documents, job descriptions, conference bios and session copy, magazine articles, data surveys and blogs (oh the blogs). Not to mention a fair bit of code. Below is a drive-by smattering of some of my favorites.</p>
 			</div>
 		</div>
 
@@ -73,13 +73,12 @@
 		<div class="resume" id="experienceAnchor">
 			
 			<div class="row">
-				<div id="spiceworks" class="project large-4 columns" style="background-image:url('styles/images/spiceworks.png');">
+				<div id="spiceworks" class="project large-6 columns" style="background-image:url('styles/images/spiceworks.png');">
 					<div class="project-info"><h1>Spiceworks</h1><p>Windows XP died a terrible death in April of this year. Here's a piece I wrote about coping with its end of life.</p><a href="http://www.spiceworks.com/voit/reports/windows-xp-end-of-life/">XP, We Hardly Knew Thee</a></div>
 				</div>
-				<div id="prepify" class="project large-4 columns" style="background-image:url('styles/images/prepify.png');">
+				<div id="prepify" class="project large-6 columns" style="background-image:url('styles/images/prepify.png');background-size:cover;">
 					<div class="project-info"><h1>Prepify</h1><p>This interactive SAT prep tool comes in two flavors: an older, original MakerSquare version and a LAUNCH reboot.</p><p><a href="https://github.com/MarshalJoe/Prepify">MakerSquare</a> | <a href="https://github.com/fremn/prepify_launch">Reboot</a></p></div>
 				</div>
-				<div class="project large-4 columns"></div>
 			</div>
 
 			<div class="row">
@@ -97,8 +96,10 @@
 			<div class='row'>
 				<div class="large-10 columns">
 					<div class="margin-expander"></div>
-					
-					
+					<br>
+					<h2>Resume</h2>
+					<br>
+					<iframe class="googledoc" src="https://docs.google.com/document/d/15AotEx_33IGRzm_yxTokvwYO-b908P5Y_pJvcGJ9vZQ/pub?embedded=true"></iframe>
 				</div>
 				<br class="clear">
 			</div>
@@ -116,9 +117,9 @@
 					<br>
 					<form method='post' action=''>
 						<label for="email">Email*</label>
-		    		<input id="email" name='email' type='text' required>
+		    		<input id="email" name='email' type='text' placeholder="person@place.com" required>
 		    		<label for="subject">Subject</label>
-		    		<input id="subject" name='subject' type='text'>
+		    		<input id="subject" name='subject' type='text' placeholder="Awesome guy">
 		    		<label for="message">Message*</label>
 		    		<textarea id="message" name='message' placeholder="You seem like a capital chap." required></textarea>
 	       		<input class="radius button" type='submit' value="Send">
@@ -140,10 +141,6 @@
     		$('.greeting').css({'opacity':( 400-scrollVar )/400});
 
 			})
-			
-// <a href="#myAnchor" rel="" id="anchor1" class="anchorLink">Link to the anchor</a>
-
-// <a name="myAnchor" id="myAnchor"><strong>Where i want to go</strong></a>
 
 
         //set up anchor tag to animate scrolls
@@ -156,23 +153,33 @@
 
 				// Set up hover state for projects
 				//hover events for projects
-				var projectFade = function (element, img_url) {
+				var projectFade = function (element, img_url, cover)	{
+					if (cover) {
+						var size = "cover";
+					} else {
+						var size = "";
+					}
+
 					$(element).hover(
 					function () {
-							$(element).css({"background": "", "background-color": "#0000f5"});
+							$(element).css({"background": "", "background-color": "#322bf2"});
 							$(element + " .project-info").fadeIn();
 						}, function () {
 							$(element + " .project-info").hide();
-							$(element).css({"background-color": "", "background-image": img_url});
+							$(element).css({
+								"background-color": "", 
+								"background-image": img_url, 
+								"background-size": size
+							});
 						}
 					);
 				};
 
-				projectFade("#prepify", "url('styles/images/prepify.png')");
-				projectFade("#sxsw", "url('styles/images/sxsw.png')");
-				projectFade("#spiceworks", "url('styles/images/spiceworks.png')");
-				projectFade("#culturemap", "url('styles/images/culturemap.png')");
-				projectFade("#alcalde", "url('styles/images/alcalde.png')");
+				projectFade("#prepify", "url('styles/images/prepify.png')", true);
+				projectFade("#sxsw", "url('styles/images/sxsw.png')", false);
+				projectFade("#spiceworks", "url('styles/images/spiceworks.png')", false);
+				projectFade("#culturemap", "url('styles/images/culturemap.png')", false);
+				projectFade("#alcalde", "url('styles/images/alcalde.png')", false);
 
 				// stellar.js parallax scrolling plugin configuration
 				$("body").stellar({
