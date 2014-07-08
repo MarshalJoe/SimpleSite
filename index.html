@@ -34,7 +34,7 @@
 				<p>Joe Marshall <span class="asterisk">*</span></p>
 				<p class="subtitle">*front-end developer</p>
 				<br>
-				<div class="CTA"><a class="CTA" href="#myAnchor" rel="" id="anchor1">You had me at Joe</a></div>
+				<div class="CTA"><a class="CTA" href="#myAnchor" rel="" id="anchor1">YOU HAD ME AT JOE</a></div>
 			</div>
 		</div>
 			
@@ -50,7 +50,7 @@
 			<br>
 			<p>Semantic HTML5</p>
 			<p>Responsive CSS3</p>
-			<p>Clean JS, Ruby and RoR</p>
+			<p>Concise JS, Ruby and RoR</p>
 		</div>
 
 		<article>
@@ -85,7 +85,13 @@
 					<p>Technical challenge (and how I overcame it): After writing code for a subscription email designed to introduce new users, I was having trouble making Rails ActionMailer fire on the signup event. After tracing the stack of the rails server, I realized the original rails create action was never being called - instead it was a custom Devise function (an authentication gem) that was getting invoked, with user as well as session creation logic. To fix the issue, I introduced a new custom create action that inherited from the Devise function, invoking the same method with the keyword "super" to ensure authentication was preserved, while adding the new mail logic below. Classical inheritance: a programmer's best friend.</p>
 					<p>Codebase: <a href="">Original Repo</a>, <a href="">Repo 2.0</a></p>
 					<h2>Javascript</h2>
+					<p></p>
 					<h2>HTML5 / CSS3</h2>
+					<p>Project: Contact Form</p>
+					<p>Timeline: 1 day</p>
+					<p>Tech Stack: PHP, jQuery, Javascript, AJAX</p>
+					<p>Description: Absent some serious client-side goodness like Angular, AJAX is the only way to go for full-featured form solutions that don't hit the server.</p>
+					<p>Technical challenges (and how I overcame them): (1) After successfully writing the code to AJAX the form's results and display loading and success messages, I was having trouble with the form hanging - taking <i>almost</i> until timeout to complete the mail function successfully. After researching, I found that changing the configuration of /etc/hosts to list a FQDN (full qualified domain name) solved the issue swimmingly. (2) Putting the form up on the site, I noticed that I wasn't able to click into the form fields - except halfway through the message text area. I realized it had to be a CSS issue and, inspecting the form's elements, discovered that the fixed position block containing my name and job title, although it was fully transparent, was overlaying the form and preventing selection. Simple fix: z-index! I simply positioned the form element and added a z-index higher than that of the title.</p>
 				</div>
 				<br class="clear">
 		</div>
